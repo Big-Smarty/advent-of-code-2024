@@ -1,0 +1,13 @@
+[toolchain]
+channel = "nightly"
+components = [
+    "rustfmt",         # Code formatting tool
+    "clippy",          # Linter
+    "rust-analyzer",   # Rust analyzer for IDE support
+    "rust-docs",       # Local documentation for Rust
+]
+
+[target.x86_64-unknown-linux-gnu]
+rustc = "nightly"
+
+
