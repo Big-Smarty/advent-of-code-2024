@@ -27,6 +27,7 @@
         };
         rustToolchain = pkgs.pkgsBuildHost.rust-bin.fromRustupToolchainFile ./rust-toolchain.toml;
         nativeBuildInputs = with pkgs; [
+          aoc-cli
           rustToolchain
           pkg-config
         ];
